@@ -1,0 +1,9 @@
+# WebAPI .NET 6
+Uma WebAPI mais desacoplada com o foco em treinar um código mais flexível e experimentar uma abordagem com Class Library.
+
+# Ferramentas utilizadas
+- Dbeaver (para modelagem do banco de dados);
+- Rider;
+- Docker (para utilizar o SQL Server 2019);
+- SQL Server 2019;
+- Postman e Swagger para testar os métodos CRUD.
