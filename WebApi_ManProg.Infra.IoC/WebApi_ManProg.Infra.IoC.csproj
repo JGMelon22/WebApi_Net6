@@ -6,4 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WebApi_ManProg.Application\WebApi_ManProg.Application.csproj" />
+      <ProjectReference Include="..\WebApi_ManProg.Domain\WebApi_ManProg.Domain.csproj" />
+      <ProjectReference Include="..\WebApi_ManProg.Infra.Data\WebApi_ManProg.Infra.Data.csproj" />
+    </ItemGroup>
+
 </Project>

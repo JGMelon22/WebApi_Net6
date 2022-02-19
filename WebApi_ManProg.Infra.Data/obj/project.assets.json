@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "WebApi_ManProg.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebApi_ManProg.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_ManProg.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "WebApi_ManProg.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
+      "msbuildProject": "../WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "WebApi_ManProg.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\João Gabriel\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Domain\\WebApi_ManProg.Domain.csproj": {
+              "projectPath": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Domain\\WebApi_ManProg.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

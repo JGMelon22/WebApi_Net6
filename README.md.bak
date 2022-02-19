@@ -7,6 +7,3 @@ Uma WebAPI mais desacoplada com o foco em treinar um código mais flexível e ex
 - Docker (para utilizar o SQL Server 2019);
 - SQL Server 2019;
 - Postman e Swagger para testar os métodos CRUD.
-
-# Pacotes NuGet usados
-- Microsoft.EntityFrameworkCore (6.0.2);

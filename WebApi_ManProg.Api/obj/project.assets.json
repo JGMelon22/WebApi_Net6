@@ -72,6 +72,57 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "WebApi_ManProg.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WebApi_ManProg.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi_ManProg.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_ManProg.Application.dll": {}
+        }
+      },
+      "WebApi_ManProg.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebApi_ManProg.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_ManProg.Domain.dll": {}
+        }
+      },
+      "WebApi_ManProg.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WebApi_ManProg.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi_ManProg.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_ManProg.Infra.Data.dll": {}
+        }
+      },
+      "WebApi_ManProg.Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WebApi_ManProg.Application": "1.0.0",
+          "WebApi_ManProg.Domain": "1.0.0",
+          "WebApi_ManProg.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi_ManProg.Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_ManProg.Infra.IoC.dll": {}
+        }
       }
     }
   },
@@ -200,11 +251,32 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "WebApi_ManProg.Application/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
+      "msbuildProject": "../WebApi_ManProg.Application/WebApi_ManProg.Application.csproj"
+    },
+    "WebApi_ManProg.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
+      "msbuildProject": "../WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+    },
+    "WebApi_ManProg.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
+      "msbuildProject": "../WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj"
+    },
+    "WebApi_ManProg.Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
+      "msbuildProject": "../WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "WebApi_ManProg.Infra.IoC >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -231,7 +303,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Infra.IoC\\WebApi_ManProg.Infra.IoC.csproj": {
+              "projectPath": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Infra.IoC\\WebApi_ManProg.Infra.IoC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
