@@ -1,15 +1,9 @@
-﻿using System.Reflection;
-using WebApi_ManProg.Domain.Validations;
+﻿using WebApi_ManProg.Domain.Validations;
 
 namespace WebApi_ManProg.Domain.Entities;
 
 public sealed class Person
 {
-    public int Id { get; private set; }
-    public string Name { get; private set; }
-    public string Document { get; private set; }
-    public string Phone { get; private set; }
-
     // Id será um dado "Identity" vindo do SQL Server
     // Responsável por inserir
     public Person(string name, string document, string phone)
@@ -23,9 +17,14 @@ public sealed class Person
         DomainValidationException.When(id < 0, "O Id deve ser maior que 0!");
         Id = id;
         Validation(document, name, phone);
-
     }
-    
+
+    public int Id { get; }
+    public string Name { get; private set; }
+    public string Document { get; private set; }
+    public string Phone { get; private set; }
+    public ICollection<Purchase> Purchases { get; set; } // Uma pessoa pode ter mais uma compra
+
     // Chama a validação genérica
     private void Validation(string document, string name, string phone)
     {

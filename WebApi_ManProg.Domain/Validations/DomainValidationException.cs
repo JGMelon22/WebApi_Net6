@@ -6,12 +6,9 @@ public class DomainValidationException : Exception
     {
     }
 
-    // Vaidação genérica em si
+    // Validação genérica em si
     public static void When(bool hasError, string message)
     {
-        if (hasError)
-        {
-            throw new DomainValidationException(message);
-        }
+        if (hasError) throw new DomainValidationException(message);
     }
 }

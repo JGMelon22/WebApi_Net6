@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\WebApi_ManProg.Domain\WebApi_ManProg.Domain.csproj" />
+        <ProjectReference Include="..\WebApi_ManProg.Domain\WebApi_ManProg.Domain.csproj"/>
     </ItemGroup>
 
 </Project>
