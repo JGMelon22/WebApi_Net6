@@ -1,5 +1,6 @@
 # WebAPI .NET 6
 Uma WebAPI mais desacoplada com o foco em treinar um código mais flexível e experimentar uma abordagem com Class Library.
+_Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnmUBDPnkKgV-75vQ)
 
 # Ferramentas utilizadas
 - Dbeaver (para modelagem do banco de dados);
