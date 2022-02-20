@@ -12,4 +12,4 @@ _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnm
 # Pacotes NuGet usados
 - Microsoft.EntityFrameworkCore (6.0.2);
 - Microsoft.EntityFrameworkCore.SqlServer (6.0.2);
-Swashbuckle.AspNetCore (6.2.3).
+- Swashbuckle.AspNetCore (6.2.3).
