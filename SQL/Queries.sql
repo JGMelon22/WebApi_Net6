@@ -56,15 +56,14 @@ ALTER TABLE [Compra]
 ALTER TABLE [Compra]
 		ADD CONSTRAINT [FK_IdProduto]
 			FOREIGN KEY ([IdProduto])
-            REFERENCES [Produto]
+            REFERENCES [Produto](IdProduto)
 	GO
 
 ALTER TABLE [Compra]
 		ADD CONSTRAINT [FK_IdPessoa]
 			FOREIGN KEY ([IdPessoa])
-            REFERENCES [Pessoa]
+            REFERENCES [Pessoa](IdPessoa)
 	GO
-ROLLBACK -- COMMIT
 
 -- Cria a trigger para resetar o contador do identity
 CREATE Trigger [dbo].[ResetarContadorPessoa]

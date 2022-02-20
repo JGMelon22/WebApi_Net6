@@ -19,7 +19,7 @@ public sealed class Products
     }
 
     public int Id { get; }
-    public string Name { get; private set; } 
+    public string Name { get; private set; }
     public string CodErp { get; private set; }
     public decimal Price { get; private set; }
     public ICollection<Person> Persons { get; set; } // E um produto pode ser comprado por mais de uma pessoa

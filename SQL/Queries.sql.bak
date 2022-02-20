@@ -68,7 +68,7 @@ ROLLBACK -- COMMIT
 
 -- Cria a trigger para resetar o contador do identity
 CREATE Trigger [dbo].[ResetarContadorPessoa]
-ON Pessoa
+ON [dbo].[Pessoa]
 INSTEAD OF DELETE
 AS 
 BEGIN
