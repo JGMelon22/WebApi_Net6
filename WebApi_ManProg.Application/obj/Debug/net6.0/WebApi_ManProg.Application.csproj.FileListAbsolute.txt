@@ -1,0 +1,15 @@
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\WebApi_ManProg.Application.deps.json
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\WebApi_ManProg.Application.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\ref\WebApi_ManProg.Application.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\WebApi_ManProg.Application.pdb
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\WebApi_ManProg.Domain.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\bin\Debug\net6.0\WebApi_ManProg.Domain.pdb
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.csproj.AssemblyReference.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.AssemblyInfoInputs.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.AssemblyInfo.cs
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.csproj.CoreCompileInputs.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.csproj.CopyComplete
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\ref\WebApi_ManProg.Application.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Application\obj\Debug\net6.0\WebApi_ManProg.Application.pdb

@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApi_ManProg.Infra.IoC/1.0.0": {
+        "dependencies": {
+          "WebApi_ManProg.Application": "1.0.0",
+          "WebApi_ManProg.Domain": "1.0.0",
+          "WebApi_ManProg.Infra.Data": "1.0.0"
+        },
+        "runtime": {
+          "WebApi_ManProg.Infra.IoC.dll": {}
+        }
+      },
+      "WebApi_ManProg.Application/1.0.0": {
+        "dependencies": {
+          "WebApi_ManProg.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WebApi_ManProg.Application.dll": {}
+        }
+      },
+      "WebApi_ManProg.Domain/1.0.0": {
+        "runtime": {
+          "WebApi_ManProg.Domain.dll": {}
+        }
+      },
+      "WebApi_ManProg.Infra.Data/1.0.0": {
+        "dependencies": {
+          "WebApi_ManProg.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WebApi_ManProg.Infra.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApi_ManProg.Infra.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi_ManProg.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi_ManProg.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi_ManProg.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

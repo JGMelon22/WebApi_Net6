@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vVnmmjPGuhcs9dpu0XJMdBJWIRqS0dJacqnU8mXXpJI=",
+  "Source": "WebApi_ManProg.Api",
+  "BasePath": "_content/WebApi_ManProg.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

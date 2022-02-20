@@ -10,3 +10,5 @@ Uma WebAPI mais desacoplada com o foco em treinar um código mais flexível e ex
 
 # Pacotes NuGet usados
 - Microsoft.EntityFrameworkCore (6.0.2);
+- Microsoft.EntityFrameworkCore.SqlServer (6.0.2);
+Swashbuckle.AspNetCore (6.2.3).

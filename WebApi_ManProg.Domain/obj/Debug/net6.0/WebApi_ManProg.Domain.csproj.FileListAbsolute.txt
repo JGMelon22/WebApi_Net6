@@ -1,0 +1,12 @@
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\bin\Debug\net6.0\WebApi_ManProg.Domain.deps.json
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\bin\Debug\net6.0\WebApi_ManProg.Domain.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\bin\Debug\net6.0\ref\WebApi_ManProg.Domain.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\bin\Debug\net6.0\WebApi_ManProg.Domain.pdb
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.csproj.AssemblyReference.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.AssemblyInfoInputs.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.AssemblyInfo.cs
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.csproj.CoreCompileInputs.cache
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\ref\WebApi_ManProg.Domain.dll
+D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\obj\Debug\net6.0\WebApi_ManProg.Domain.pdb
