@@ -23,7 +23,7 @@ public class Purchase
     public int PersonId { get; private set; }
     public DateTime Date { get; private set; }
     public Person Person { get; set; }
-    public Products Products { get; private set; } // Auxilia na hora de mapear no Bd
+    public Product Product { get; private set; } // Auxilia na hora de mapear no Bd
 
     private void Validation(int productId, int personId, DateTime? date)
     {

@@ -2,16 +2,16 @@
 
 namespace WebApi_ManProg.Domain.Entities;
 
-public sealed class Products
+public sealed class Product
 {
     // ctor para adicionar
-    public Products(string name, string codErp, decimal price)
+    public Product(string name, string codErp, decimal price)
     {
         Validation(name, codErp, price);
     }
 
     // ctor para editar
-    public Products(int id, string name, string codErp, decimal price)
+    public Product(int id, string name, string codErp, decimal price)
     {
         DomainValidationException.When(id < 0, "O Id do produto deve ser maior que 0!");
         Id = id;
@@ -23,6 +23,7 @@ public sealed class Products
     public string CodErp { get; private set; }
     public decimal Price { get; private set; }
     public ICollection<Person> Persons { get; set; } // E um produto pode ser comprado por mais de uma pessoa
+    public ICollection<Purchase> Purchases { get; set; } // E um produto pode ser comprado por mais de uma pessoa
 
     // Validação
     private void Validation(string name, string codErp, decimal price)
