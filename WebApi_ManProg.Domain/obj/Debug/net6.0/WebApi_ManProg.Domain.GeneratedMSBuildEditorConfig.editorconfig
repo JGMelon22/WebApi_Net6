@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApi_ManProg.Domain
-build_property.ProjectDir = D:\Documents\CodeRelated\RandomCodes\CSharp\WebApi_ManProg\WebApi_ManProg.Domain\
+build_property.ProjectDir = /home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/

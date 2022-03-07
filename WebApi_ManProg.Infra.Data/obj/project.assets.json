@@ -1787,19 +1787,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\João Gabriel\\.nuget\\packages\\": {}
+    "/home/joogabriel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Infra.Data\\WebApi_ManProg.Infra.Data.csproj",
+      "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
       "projectName": "WebApi_ManProg.Infra.Data",
-      "projectPath": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Infra.Data\\WebApi_ManProg.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\João Gabriel\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Infra.Data\\obj\\",
+      "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
+      "packagesPath": "/home/joogabriel/.nuget/packages/",
+      "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\João Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/joogabriel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1811,8 +1811,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Domain\\WebApi_ManProg.Domain.csproj": {
-              "projectPath": "D:\\Documents\\CodeRelated\\RandomCodes\\CSharp\\WebApi_ManProg\\WebApi_ManProg.Domain\\WebApi_ManProg.Domain.csproj"
+            "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+              "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
             }
           }
         }
@@ -1851,7 +1851,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

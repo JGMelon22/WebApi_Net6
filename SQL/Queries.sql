@@ -64,6 +64,7 @@ ALTER TABLE [Compra]
 			FOREIGN KEY ([IdPessoa])
             REFERENCES [Pessoa](IdPessoa)
 	GO
+ROLLBACK -- COMMIT
 
 -- Cria a trigger para resetar o contador do identity
 CREATE Trigger [dbo].[ResetarContadorPessoa]
