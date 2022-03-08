@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7uJkQZAGDF99ds0MQO7Y7dIoyAVfqdfyB1LKxUaLxB/6rEPR/GDqgme3ITsEYJqrPItOcVlbNupqmofjrZ7RRA==",
+  "dgSpecHash": "n01rIzf39bv89bV7zzrR8stUuW2R/fdZKdEOizqSKin+3JE1fS2VJeVYIMvMYXLVRxe9+I3pjW39j15qNsPTPA==",
   "success": true,
   "projectFilePath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
   "expectedPackageFiles": [
+    "/home/joogabriel/.nuget/packages/fluentvalidation/10.3.6/fluentvalidation.10.3.6.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
