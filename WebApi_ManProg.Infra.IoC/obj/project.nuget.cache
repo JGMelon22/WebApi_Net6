@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n01rIzf39bv89bV7zzrR8stUuW2R/fdZKdEOizqSKin+3JE1fS2VJeVYIMvMYXLVRxe9+I3pjW39j15qNsPTPA==",
+  "dgSpecHash": "YoZZS3teIxYZa1xDg58DjxCWH3e+kTovJ4YHpbUH8+h7lnDlozWcMTSF+AJZ4CKe4pD2mnhgl0SU/egFllsvug==",
   "success": true,
   "projectFilePath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
   "expectedPackageFiles": [
