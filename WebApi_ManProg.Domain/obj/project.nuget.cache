@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QmxbwpH4ezqXEcmADE+Gv1zZ2rsxCjedaxnZ+4kgirQQo8koutkzr3vmpgKuPJ7yebI1OByn6gL5slMXZsZPFw==",
+  "dgSpecHash": "yYCXmhxyklODkpfAywruhz60WVI8jbkfMuYlGbpHY/7H2Xx6mqioFsecqROmeXlzOf7Fk/PSig+I2pHludtoJw==",
   "success": true,
   "projectFilePath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
   "expectedPackageFiles": [
+    "/home/joogabriel/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/fluentvalidation/10.3.6/fluentvalidation.10.3.6.nupkg.sha512",
-    "/home/joogabriel/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/joogabriel/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.entityframeworkcore/6.0.2/microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
