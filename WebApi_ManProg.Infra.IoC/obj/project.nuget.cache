@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Fe4WLqlF5F9/IuVsDh/5lh0qCubI+LUXS+AjgaNEwB5Zt8ZYv+N6wxPowuwkSZdJ8wgJ+m6DYzi2/M+OxHPhvQ==",
+  "dgSpecHash": "SkYB+fQHG5+b8RND1cqUmy0w0sivQm8BoNY8l/k5zkLZktZ6uZd4gO/QtTaMvsvLZ/diaRWH7n+M1SmWPaVuOw==",
   "success": true,
   "projectFilePath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
   "expectedPackageFiles": [
     "/home/joogabriel/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/home/joogabriel/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/fluentvalidation/10.3.6/fluentvalidation.10.3.6.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",

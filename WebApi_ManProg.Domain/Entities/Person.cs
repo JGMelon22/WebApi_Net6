@@ -9,6 +9,7 @@ public sealed class Person
     public Person(string name, string document, string phone)
     {
         Validation(document, name, phone);
+        Purchases = new List<Purchase>();
     }
 
     // Responsável por atualizar
@@ -17,6 +18,7 @@ public sealed class Person
         DomainValidationException.When(id < 0, "O Id deve ser maior que 0!");
         Id = id;
         Validation(document, name, phone);
+        Purchases = new List<Purchase>();
     }
 
     public int Id { get; }

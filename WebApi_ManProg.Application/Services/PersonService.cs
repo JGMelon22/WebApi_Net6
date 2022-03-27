@@ -9,8 +9,8 @@ namespace WebApi_ManProg.Application.Services;
 
 public class PersonService : IPersonService
 {
-    private readonly IPersonRepository _personRepository;
     private readonly IMapper _mapper;
+    private readonly IPersonRepository _personRepository;
 
     public PersonService(IPersonRepository personRepository, IMapper mapper)
     {
@@ -30,6 +30,6 @@ public class PersonService : IPersonService
         var person = _mapper.Map<Person>(personDto);
         var data = await _personRepository.CreateAsync(person);
 
-        return ResultService.Ok<PersonDTO>(_mapper.Map<PersonDTO>(data));
+        return ResultService.Ok(_mapper.Map<PersonDTO>(data));
     }
 }

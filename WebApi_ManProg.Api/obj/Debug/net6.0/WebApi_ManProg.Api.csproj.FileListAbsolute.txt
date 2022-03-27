@@ -132,3 +132,6 @@ D:/Documents/CodeRelated/RandomCodes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/bi
 /home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/obj/Debug/net6.0/WebApi_ManProg.Api.pdb
 /home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/obj/Debug/net6.0/WebApi_ManProg.Api.genruntimeconfig.cache
 /home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/obj/Debug/net6.0/ref/WebApi_ManProg.Api.dll
+/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/bin/Debug/net6.0/AutoMapper.dll
+/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/bin/Debug/net6.0/FluentValidation.dll
+/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Api/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

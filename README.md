@@ -14,4 +14,5 @@ _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnm
 - Microsoft.EntityFrameworkCore.SqlServer (6.0.2);
 - Swashbuckle.AspNetCore (6.2.3);
 - FluentValidation (10.3.6);
-- AutoMapper (11.0.1).
+- AutoMapper (11.0.1);
+- AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0).
