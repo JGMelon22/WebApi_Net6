@@ -48,19 +48,23 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[10.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
@@ -129,15 +133,15 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[10.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             }
           },
           "imports": [
@@ -199,15 +203,15 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[10.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             }
           },
           "imports": [
@@ -273,15 +277,15 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[10.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             }
           },
           "imports": [
@@ -357,15 +361,15 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.3.6, )"
+              "version": "[10.4.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             }
           },
           "imports": [

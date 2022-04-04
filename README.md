@@ -10,9 +10,10 @@ _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnm
 - Postman e Swagger para testar os métodos CRUD.
 
 # Pacotes NuGet usados
-- Microsoft.EntityFrameworkCore (6.0.2);
-- Microsoft.EntityFrameworkCore.SqlServer (6.0.2);
-- Swashbuckle.AspNetCore (6.2.3);
-- FluentValidation (10.3.6);
+- Microsoft.EntityFrameworkCore (6.0.3);
+- Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2);
+- Microsoft.EntityFrameworkCore.SqlServer (6.0.3);
+- Swashbuckle.AspNetCore (6.3.0);
+- FluentValidation (10.4.0);
 - AutoMapper (11.0.1);
 - AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0).
