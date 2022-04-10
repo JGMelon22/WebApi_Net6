@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using WebApi_ManProg.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,10 @@ builder.Services.AddSwaggerGen();
 // 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddServices(builder.Configuration);
+builder.Services.AddMvc().AddJsonOptions(options => // Remove os retornos nullos no get
+{
+    options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+});
 
 var app = builder.Build();
 

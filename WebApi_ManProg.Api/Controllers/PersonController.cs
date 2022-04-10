@@ -28,5 +28,28 @@ namespace WebApi_ManProg.Api.Controllers
 
             return BadRequest(result);
         }
+
+        // GET
+        [HttpGet]
+        public async Task<ActionResult> GetAsync()
+        {
+            var result = await _personService.GetAsync();
+            if (result.IsSuccess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+
+        // GET by Id
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<ActionResult> GetById(int id)
+        {
+            var result = await _personService.GetByIdAsync(id);
+            if (result.IsSuccess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
     }
 }
