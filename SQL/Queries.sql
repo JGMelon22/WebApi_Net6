@@ -1,8 +1,8 @@
 -- Cria o banco de dados
-CREATE DATABASE MpNet6Api;
+CREATE DATABASE DOTNET6_API;
 
 -- Muda para a base recem criada
-USE MpNet6Api;
+USE DOTNET6_API;
 
 -- Criação das tabelas e colunas
 BEGIN TRANSACTION
