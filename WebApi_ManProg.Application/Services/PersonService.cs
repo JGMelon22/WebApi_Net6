@@ -49,4 +49,41 @@ public class PersonService : IPersonService
 
         return ResultService.Ok(_mapper.Map<PersonDTO>(person));
     }
+
+    public async Task<ResultService> UpdateAsync(PersonDTO personDto)
+    {
+        // Validando se a DTO está preenchida
+        if (personDto == null)
+            return ResultService.Fail("Alguns campos não foram preenchidos. Por favor, verifique os");
+
+        // Validando os atributos obrigatórios
+        var validation = new PersonDTOValidator().Validate(personDto);
+
+        if (!validation.IsValid)
+            return ResultService.RequestError("Ocorreu um erro ao validar os campos.", validation);
+
+        var person = await _personRepository.GetByIdAsync(personDto.Id);
+
+        if (person == null)
+            return ResultService.Fail("Pessoa não encontrada no banco de dados.");
+
+        // Caso a pessoa que estamos buscando seja encontrada...
+        // Usaremos o o map para pegar as pessoas vindas da DTO
+        // E jogar para dentro da pessoa
+        person = _mapper.Map<PersonDTO, Person>(personDto, person);
+        await _personRepository.EditAsync(person);
+        return ResultService.Ok("Pessoa atualizada com êxito");
+    }
+
+    public async Task<ResultService> DeleteAsync(int id)
+    {
+        // Antes de deletar, precisamos checar se o id passado existe no bd
+        var person = await _personRepository.GetByIdAsync(id);
+
+        if (person == null)
+            return ResultService.Fail("O id da pessoa informada não existe");
+
+        await _personRepository.DeleteAsync(person);
+        return ResultService.Ok($"A pessoa com {id} foi excluída da base com sucesso!");
+    }
 }

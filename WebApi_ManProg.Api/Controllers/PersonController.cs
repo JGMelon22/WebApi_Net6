@@ -51,5 +51,31 @@ namespace WebApi_ManProg.Api.Controllers
 
             return BadRequest(result);
         }
+
+        // PUT
+        [HttpPut]
+        public async Task<ActionResult> UpdateAsync([FromBody] PersonDTO personDto)
+        {
+            var result = await _personService.UpdateAsync(personDto);
+
+            // Tratamento básico
+            if (result.IsSuccess)
+                Ok();
+
+            return BadRequest(result);
+        }
+
+        // Delete
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            var result = await _personService.DeleteAsync(id);
+
+            // Tratamento básico
+            if (result.IsSuccess)
+                Ok();
+
+            return BadRequest(result);
+        }
     }
 }
