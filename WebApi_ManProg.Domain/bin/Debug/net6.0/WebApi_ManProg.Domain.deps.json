@@ -9,7 +9,7 @@
       "WebApi_ManProg.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "10.4.0",
+          "FluentValidation": "11.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
         },
@@ -28,11 +28,11 @@
           }
         }
       },
-      "FluentValidation/10.4.0": {
+      "FluentValidation/11.0.1": {
         "runtime": {
           "lib/net6.0/FluentValidation.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.4.0.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
           }
         }
       },
@@ -493,12 +493,12 @@
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
     },
-    "FluentValidation/10.4.0": {
+    "FluentValidation/11.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
-      "path": "fluentvalidation/10.4.0",
-      "hashPath": "fluentvalidation.10.4.0.nupkg.sha512"
+      "sha512": "sha512-fcL5zF/glDwskUtpL0IfBupVWTChxOOvVs+dAA7Gme5NjIeJBiFKWq3eZV1O+AigucnBTr8SWG7wRRn+PgFnTw==",
+      "path": "fluentvalidation/11.0.1",
+      "hashPath": "fluentvalidation.11.0.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",

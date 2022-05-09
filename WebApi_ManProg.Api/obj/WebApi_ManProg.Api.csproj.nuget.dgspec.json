@@ -48,7 +48,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[11.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -64,7 +64,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -133,7 +133,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[11.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -203,7 +203,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[11.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -277,7 +277,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[11.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -361,7 +361,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[11.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
