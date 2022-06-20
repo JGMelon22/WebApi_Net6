@@ -50,4 +50,27 @@ public class ProductController : ControllerBase
 
         return BadRequest(result);
     }
+
+    [HttpPut]
+    public async Task<ActionResult> UpdateAsync([FromBody] ProductDTO productDto)
+    {
+        var result = await _productService.UpdateAsync(productDto);
+
+        if (result.IsSuccess)
+            return Ok(result);
+
+        return BadRequest(result);
+    }
+
+    [HttpDelete]
+    [Route("{id}")]
+    public async Task<ActionResult> DeleteAsync(int id)
+    {
+        var result = await _productService.RemoveAsync(id);
+
+        if (result.IsSuccess)
+            return Ok(result);
+
+        return BadRequest(result);
+    }
 }

@@ -52,4 +52,37 @@ public class ProductService : IProductService
         var products = await _productRepository.GetProductsAsync();
         return ResultService.Ok<ICollection<ProductDTO>>(_mapper.Map<ICollection<ProductDTO>>(products));
     }
+
+    public async Task<ResultService> UpdateAsync(ProductDTO productDTO)
+    {
+        // DTO nula ou não
+        if (productDTO == null)
+            return ResultService.Fail("O objeto deve ser informado");
+
+        var validation = new ProductDTOValidator().Validate(productDTO);
+        if (!validation.IsValid)
+            return ResultService.RequestError("Ocorreu um problema ao validar.", validation);
+
+        // Tudo joia, busca
+        var product = await _productRepository.GetByIdAsync(productDTO.Id);
+
+        if (product == null)
+            return ResultService.Fail("Produto não encontrado na base dados.");
+
+        product = _mapper.Map<ProductDTO, Product>(productDTO, product);
+        await _productRepository.EditAsync(product);
+
+        return ResultService.Ok("Produto editado com sucesso!");
+    }
+
+    public async Task<ResultService> RemoveAsync(int id)
+    {
+        var product = await _productRepository.GetByIdAsync(id);
+        // Verifica se o produto existe
+        if (product == null)
+            return ResultService.Fail("Produto não existe na base de dados para deletar.");
+
+        await _productRepository.DeleteAsync(product);
+        return ResultService.Ok($"Produto com Id {id} deletado com sucesso!");
+    }
 }
