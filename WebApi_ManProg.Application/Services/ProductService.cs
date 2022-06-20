@@ -35,4 +35,21 @@ public class ProductService : IProductService
         // Dando certo
         return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(data));
     }
+
+    public async Task<ResultService<ProductDTO>> GetByIdAsync(int id)
+    {
+        var product = await _productRepository.GetByIdAsync(id);
+
+        // Valida
+        if (product == null)
+            return ResultService.Fail<ProductDTO>("Produto com o Id buscado não existe na base de dados.");
+
+        return ResultService.Ok<ProductDTO>(_mapper.Map<ProductDTO>(product));
+    }
+
+    public async Task<ResultService<ICollection<ProductDTO>>> GetAsync()
+    {
+        var products = await _productRepository.GetProductsAsync();
+        return ResultService.Ok<ICollection<ProductDTO>>(_mapper.Map<ICollection<ProductDTO>>(products));
+    }
 }
