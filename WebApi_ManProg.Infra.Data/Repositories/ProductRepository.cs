@@ -42,4 +42,10 @@ public class ProductRepository : IProductRepository
         _dbContext.Product.Remove(product);
         await _dbContext.SaveChangesAsync();
     }
+
+    public async Task<int> GetIdByCodErpAsync(string codErp)
+    {
+        // Busca o código Erp, se não achar, joga um zero
+        return (await _dbContext.Product.FirstOrDefaultAsync(x => x.CodErp == codErp))?.Id ?? 0;
+    }
 }

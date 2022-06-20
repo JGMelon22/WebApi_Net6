@@ -42,4 +42,9 @@ public class PersonRepository : IPersonRepository
         _dbContext.Remove(person);
         await _dbContext.SaveChangesAsync();
     }
+
+    public async Task<int> GetIdByDocumentAsync(string document)
+    {
+        return (await _dbContext.People.FirstOrDefaultAsync(x => x.Document == document))?.Id ?? 0;
+    }
 }
