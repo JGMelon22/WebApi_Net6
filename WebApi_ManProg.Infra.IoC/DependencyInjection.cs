@@ -22,6 +22,7 @@ public static class DependencyInjection
         // As demais classes serão adicionadas a DI posteriormente
         services.AddScoped<IPersonRepository, PersonRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IPurchaseRepository, PurchaseRepository>();
         return services;
     }
 
@@ -31,6 +32,7 @@ public static class DependencyInjection
         services.AddAutoMapper(typeof(DomainToDtoMap));
         services.AddScoped<IPersonService, PersonService>();
         services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<IPurchaseService, PurchaseService>();
 
         return services;
     }

@@ -1,4 +1,3 @@
-using System.Reflection.Metadata;
 using WebApi_ManProg.Domain.Entities;
 
 namespace WebApi_ManProg.Domain.Repositories;
@@ -17,7 +16,7 @@ public interface IPersonRepository
     Task<Person> CreateAsync(Person person);
     Task EditAsync(Person person);
     Task DeleteAsync(Person person);
-    
+
     // Passa o documento e retorna o Id pessoa
     Task<int> GetIdByDocumentAsync(string document);
 }

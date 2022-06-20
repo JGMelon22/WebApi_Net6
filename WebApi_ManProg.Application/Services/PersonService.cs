@@ -37,7 +37,7 @@ public class PersonService : IPersonService
     {
         // Busca as pessoas e as retorna 
         var people = await _personRepository.GetPeopleAsync();
-        return ResultService.Ok<ICollection<PersonDTO>>(_mapper.Map<ICollection<PersonDTO>>(people));
+        return ResultService.Ok(_mapper.Map<ICollection<PersonDTO>>(people));
     }
 
     public async Task<ResultService<PersonDTO>> GetByIdAsync(int id)
@@ -70,7 +70,7 @@ public class PersonService : IPersonService
         // Caso a pessoa que estamos buscando seja encontrada...
         // Usaremos o o map para pegar as pessoas vindas da DTO
         // E jogar para dentro da pessoa
-        person = _mapper.Map<PersonDTO, Person>(personDto, person);
+        person = _mapper.Map(personDto, person);
         await _personRepository.EditAsync(person);
         return ResultService.Ok("Pessoa atualizada com êxito");
     }

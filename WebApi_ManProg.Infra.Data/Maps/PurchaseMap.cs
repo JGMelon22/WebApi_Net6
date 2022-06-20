@@ -10,24 +10,25 @@ public class PurchaseMap : IEntityTypeConfiguration<Purchase>
     {
         # region Mapeando a tabela indicando a PK
 
-        builder.ToTable("Compra");
+        builder.ToTable("compra");
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.Id)
-            .HasColumnName("IdCompra")
+            .HasColumnName("idcompra")
             .UseIdentityColumn();
 
         // Atributos e correlacionando as colunas do bd
         builder.Property(x => x.PersonId)
-            .HasColumnName("IdPessoa")
+            .HasColumnName("idpessoa")
             .UseIdentityColumn();
 
         builder.Property(x => x.ProductId)
-            .HasColumnName("IdProduto")
+            .HasColumnName("idproduto")
             .UseIdentityColumn();
 
         builder.Property(x => x.Date)
-            .HasColumnName("DataCompra");
+            .HasColumnType("date")
+            .HasColumnName("datacompra");
 
         // Uma pessoa tem N compras
         builder.HasOne(x => x.Person)

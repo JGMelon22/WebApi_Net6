@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi_ManProg.Application.DTOs;
 using WebApi_ManProg.Application.Services.Interfaces;
-using WebApi_ManProg.Domain.Entities;
 
 namespace WebApi_ManProg.Api.Controllers;
 

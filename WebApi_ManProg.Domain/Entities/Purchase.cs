@@ -27,8 +27,8 @@ public class Purchase
 
     private void Validation(int productId, int personId)
     {
-        DomainValidationException.When(productId < 0, "O ProductId não pode ser igual a 0!");
-        DomainValidationException.When(productId < personId, "O PersonId não pode ser igual a 0!");
+        DomainValidationException.When(productId <= 0, "O ProductId deve ser informado!");
+        DomainValidationException.When(productId <= 0, "O PersonId deve ser informado!");
 
         ProductId = productId;
         PersonId = personId;
