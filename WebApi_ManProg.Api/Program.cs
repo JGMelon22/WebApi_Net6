@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 // 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddServices(builder.Configuration);
-builder.Services.AddMvc().AddJsonOptions(options => // Remove os retornos nullos no get
+builder.Services.AddMvc().AddJsonOptions(options => // Remove os retornos nulos no get
 {
     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 });

@@ -38,4 +38,26 @@ public class PurchaseController : ControllerBase
     }
 
     // GET
+    [HttpGet]
+    public async Task<IActionResult> GetAsync()
+    {
+        var result = await _purchaseService.GetAsync();
+        if (result.IsSuccess)
+            return Ok(result);
+
+        return BadRequest(result);
+    }
+    
+    // GET by Id
+    // GET
+    [HttpGet]
+    [Route("{id}")]
+    public async Task<ActionResult> GetByIdAsync(int id)
+    {
+        var result = await _purchaseService.GetByIdAsync(id);
+        if (result.IsSuccess)
+            return Ok(result);
+
+        return BadRequest(result);
+    }
 }

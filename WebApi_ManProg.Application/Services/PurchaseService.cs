@@ -1,3 +1,4 @@
+using AutoMapper;
 using WebApi_ManProg.Application.DTOs;
 using WebApi_ManProg.Application.DTOs.Validations;
 using WebApi_ManProg.Application.Services.Interfaces;
@@ -11,13 +12,15 @@ public class PurchaseService : IPurchaseService
     private readonly IPersonRepository _personRepository;
     private readonly IProductRepository _productRepository;
     private readonly IPurchaseRepository _purchaseRepository;
+    private readonly IMapper _mapper;
 
     public PurchaseService(IProductRepository productRepository, IPersonRepository personRepository,
-        IPurchaseRepository purchaseRepository)
+        IPurchaseRepository purchaseRepository, IMapper mapper)
     {
         _productRepository = productRepository;
         _personRepository = personRepository;
         _purchaseRepository = purchaseRepository;
+        _mapper = mapper;
     }
 
     public async Task<ResultService<PurchaseDTO>> CreateAsync(PurchaseDTO purchaseDto)
@@ -40,5 +43,22 @@ public class PurchaseService : IPurchaseService
         purchaseDto.Id = data.Id;
 
         return ResultService.Ok(purchaseDto);
+    }
+
+    public async Task<ResultService<PurchaseDetailDTO>> GetByIdAsync(int id)
+    {
+        var purchase = await _purchaseRepository.GetByIdAsync(id);
+
+        // Procura se o Id existe na base
+        if (purchase == null)
+            return ResultService.Fail<PurchaseDetailDTO>("Compra não localizada na bvase de dados!");
+
+        return ResultService.Ok(_mapper.Map<PurchaseDetailDTO>(purchase));
+    }
+
+    public async Task<ResultService<ICollection<PurchaseDetailDTO>>> GetAsync()
+    {
+        var purchases = await _purchaseRepository.GetAllAsync();
+        return ResultService.Ok(_mapper.Map<ICollection<PurchaseDetailDTO>>(purchases));
     }
 }
