@@ -9,10 +9,10 @@ namespace WebApi_ManProg.Application.Services;
 
 public class PurchaseService : IPurchaseService
 {
+    private readonly IMapper _mapper;
     private readonly IPersonRepository _personRepository;
     private readonly IProductRepository _productRepository;
     private readonly IPurchaseRepository _purchaseRepository;
-    private readonly IMapper _mapper;
 
     public PurchaseService(IProductRepository productRepository, IPersonRepository personRepository,
         IPurchaseRepository purchaseRepository, IMapper mapper)
@@ -60,5 +60,44 @@ public class PurchaseService : IPurchaseService
     {
         var purchases = await _purchaseRepository.GetAllAsync();
         return ResultService.Ok(_mapper.Map<ICollection<PurchaseDetailDTO>>(purchases));
+    }
+
+    public async Task<ResultService<PurchaseDTO>> UpdateAsync(PurchaseDTO purchaseDto)
+    {
+        // Verifica se o objeto foi informado
+        if (purchaseDto == null)
+            return ResultService.Fail<PurchaseDTO>("O Objeto Deve Ser Informado");
+
+        // Valida o objeto
+        var result = new PurchaseDTOValidator().Validate(purchaseDto);
+
+        if (!result.IsValid)
+            return ResultService.RequestError<PurchaseDTO>("Erros Ocorreram ao Validar A Operação.", result);
+
+        // Id existe?
+        var purchase = await _purchaseRepository.GetByIdAsync(purchaseDto.Id);
+
+        if (purchase == null)
+            return ResultService.Fail<PurchaseDTO>("A compra requisitada não existe na base de dados.");
+
+        // Buscando os Ids auxiliares
+        var productId = await _productRepository.GetIdByCodErpAsync(purchaseDto.CodErp);
+        var personId = await _personRepository.GetIdByDocumentAsync(purchaseDto.Document);
+        purchase.Edit(purchase.Id, productId, personId);
+
+        await _purchaseRepository.EditAsync(purchase);
+        return ResultService.Ok(purchaseDto);
+    }
+
+    public async Task<ResultService> RemoveAsync(int id)
+    {
+        // Verifica se existe
+        var purchase = await _purchaseRepository.GetByIdAsync(id);
+
+        if (purchase == null)
+            return ResultService.Fail("Compra Não Encontrada na Base de Dados.");
+
+        await _purchaseRepository.DeleteAsync(purchase);
+        return ResultService.Ok($"Compra: {id} Cancelada com Sucesso!");
     }
 }

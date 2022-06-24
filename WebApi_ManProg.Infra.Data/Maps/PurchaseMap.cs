@@ -20,11 +20,9 @@ public class PurchaseMap : IEntityTypeConfiguration<Purchase>
         // Atributos e correlacionando as colunas do bd
         builder.Property(x => x.PersonId)
             .HasColumnName("IdPessoa");
-            // .UseIdentityColumn();
 
-            builder.Property(x => x.ProductId)
-                .HasColumnName("IdProduto");
-            // .UseIdentityColumn();/
+        builder.Property(x => x.ProductId)
+            .HasColumnName("IdProduto");
 
         builder.Property(x => x.Date)
             .HasColumnType("date")
@@ -36,7 +34,7 @@ public class PurchaseMap : IEntityTypeConfiguration<Purchase>
 
         // Um produto tem N compras
         builder.HasOne(x => x.Product)
-            .WithMany(x => x.Purchases);
+            .WithMany(y => y.Purchases);
 
         # endregion
     }

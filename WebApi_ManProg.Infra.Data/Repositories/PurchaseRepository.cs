@@ -18,7 +18,7 @@ public class PurchaseRepository : IPurchaseRepository
     {
         return await _dbContext.Purchase
             .Include(x => x.Person) // Lazy loading
-            .Include(x => x.ProductId)
+            .Include(x => x.Product)
             .ToListAsync();
     }
 
@@ -26,26 +26,8 @@ public class PurchaseRepository : IPurchaseRepository
     {
         return await _dbContext.Purchase
             .Include(x => x.Person) // Lazy loading
-            .Include(x => x.ProductId == id)
+            .Include(x => x.Product)
             .FirstOrDefaultAsync(x => x.Id == id);
-    }
-
-    // Person By Id
-    public async Task<ICollection<Purchase>> GetPersonIdAsync(int personId)
-    {
-        return await _dbContext.Purchase
-            .Include(x => x.Person) // Lazy loading
-            .Include(x => x.Product)
-            .Include(x => x.PersonId == personId).ToListAsync();
-    }
-
-    // Product By Id 
-    public async Task<ICollection<Purchase>> GetProductIdAsync(int productId)
-    {
-        return await _dbContext.Purchase
-            .Include(x => x.Person) // Lazy loading
-            .Include(x => x.Product)
-            .Include(x => x.ProductId == productId).ToListAsync();
     }
 
     public async Task<Purchase> CreateAsync(Purchase purchase)
@@ -65,5 +47,23 @@ public class PurchaseRepository : IPurchaseRepository
     {
         _dbContext.Purchase.Remove(purchase);
         await _dbContext.SaveChangesAsync();
+    }
+
+    // Person By Id
+    public async Task<ICollection<Purchase>> GetByPersonIdAsync(int personId)
+    {
+        return await _dbContext.Purchase
+            .Include(x => x.Person) // Lazy loading
+            .Include(x => x.Product)
+            .Where(x => x.PersonId == personId).ToListAsync();
+    }
+
+    // Product By Id 
+    public async Task<ICollection<Purchase>> GetByProductIdAsync(int productId)
+    {
+        return await _dbContext.Purchase
+            .Include(x => x.Product)
+            .Include(x => x.Person) // Lazy loading
+            .Where(x => x.ProductId == productId).ToListAsync();
     }
 }

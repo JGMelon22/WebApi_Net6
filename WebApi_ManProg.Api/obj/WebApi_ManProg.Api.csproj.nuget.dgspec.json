@@ -48,7 +48,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.0.3, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -133,7 +133,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.0.3, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -211,7 +211,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.0.3, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -293,7 +293,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.0.3, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -385,7 +385,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.0.3, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

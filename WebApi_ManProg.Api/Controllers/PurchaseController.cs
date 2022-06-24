@@ -47,7 +47,7 @@ public class PurchaseController : ControllerBase
 
         return BadRequest(result);
     }
-    
+
     // GET by Id
     // GET
     [HttpGet]
@@ -55,6 +55,38 @@ public class PurchaseController : ControllerBase
     public async Task<ActionResult> GetByIdAsync(int id)
     {
         var result = await _purchaseService.GetByIdAsync(id);
+        if (result.IsSuccess)
+            return Ok(result);
+
+        return BadRequest(result);
+    }
+
+    // Editar
+    [HttpPut]
+    public async Task<IActionResult> EditAsync([FromBody] PurchaseDTO purchaseDto)
+    {
+        // Tratando a exception
+        try
+        {
+            var result = await _purchaseService.UpdateAsync(purchaseDto);
+            if (result.IsSuccess)
+                return Ok(result);
+
+            return BadRequest(result);
+        }
+        catch (DomainValidationException e)
+        {
+            var result = ResultService.Fail(e.Message);
+            return BadRequest(result);
+        }
+    }
+
+    // Remover
+    [HttpDelete]
+    [Route("{id}")]
+    public async Task<ActionResult> RemoveAsync(int id)
+    {
+        var result = await _purchaseService.RemoveAsync(id);
         if (result.IsSuccess)
             return Ok(result);
 

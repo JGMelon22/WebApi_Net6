@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ct/Vmmri9gsgSLwoy8JMpumJLRvzzqCw6toISFscFuN60LelpdK4RkfUMlfEsB7Pm9nO8e8+8vF0wZ6TymL7ew==",
+  "dgSpecHash": "lnELLpxUhzBH2SGy62qwE889oask6oqTWAkSsfqMMpyzIIkxuiJh5kYFB3BSR2U4lYYZe3jGdLoz6FPvJWZ0LQ==",
   "success": true,
   "projectFilePath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
   "expectedPackageFiles": [
     "/home/joogabriel/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
-    "/home/joogabriel/.nuget/packages/fluentvalidation/11.0.3/fluentvalidation.11.0.3.nupkg.sha512",
+    "/home/joogabriel/.nuget/packages/fluentvalidation/11.1.0/fluentvalidation.11.1.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/home/joogabriel/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
