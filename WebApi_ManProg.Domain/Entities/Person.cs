@@ -26,6 +26,7 @@ public sealed class Person
     public string Document { get; private set; }
     public string Phone { get; private set; }
     public ICollection<Purchase> Purchases { get; set; } // Uma pessoa pode ter mais uma compra
+    public ICollection<Product> Product { get; set; }
 
     // Chama a validação genérica
     private void Validation(string document, string name, string phone)
