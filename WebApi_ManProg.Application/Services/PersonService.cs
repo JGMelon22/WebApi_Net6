@@ -3,6 +3,7 @@ using WebApi_ManProg.Application.DTOs;
 using WebApi_ManProg.Application.DTOs.Validations;
 using WebApi_ManProg.Application.Services.Interfaces;
 using WebApi_ManProg.Domain.Entities;
+using WebApi_ManProg.Domain.FiltersDb;
 using WebApi_ManProg.Domain.Repositories;
 
 namespace WebApi_ManProg.Application.Services;
@@ -85,5 +86,14 @@ public class PersonService : IPersonService
 
         await _personRepository.DeleteAsync(person);
         return ResultService.Ok($"A pessoa com {id} foi excluída da base com sucesso!");
+    }
+
+    public async Task<ResultService<PagedBaseResponseDTO<PersonDTO>>> GetPagedAsync(PersonFilterDb personFilterDb)
+    {
+        var peoplePaged = await _personRepository.GetPagedAsync(personFilterDb);
+        var result = new PagedBaseResponseDTO<PersonDTO>(peoplePaged.TotalRegisters,
+            _mapper.Map<List<PersonDTO>>(peoplePaged.Data));
+
+        return ResultService.Ok(result);
     }
 }

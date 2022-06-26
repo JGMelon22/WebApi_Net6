@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi_ManProg.Application.DTOs;
 using WebApi_ManProg.Application.Services.Interfaces;
+using WebApi_ManProg.Domain.FiltersDb;
 
 namespace WebApi_ManProg.Api.Controllers;
 
@@ -74,6 +75,18 @@ public class PersonController : ControllerBase
         // Tratamento básico
         if (result.IsSuccess)
             Ok();
+
+        return BadRequest(result);
+    }
+
+    // GET 
+    [HttpGet]
+    [Route("paged")] // "FromQuery" concatena  a string a variável
+    public async Task<ActionResult> GetPagedAsync([FromQuery] PersonFilterDb personFilterDb)
+    {
+        var result = await _personService.GetPagedAsync(personFilterDb);
+        if (result.IsSuccess)
+            return Ok(result);
 
         return BadRequest(result);
     }

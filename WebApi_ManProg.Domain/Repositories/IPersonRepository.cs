@@ -1,4 +1,5 @@
 using WebApi_ManProg.Domain.Entities;
+using WebApi_ManProg.Domain.FiltersDb;
 
 namespace WebApi_ManProg.Domain.Repositories;
 
@@ -19,4 +20,7 @@ public interface IPersonRepository
 
     // Passa o documento e retorna o Id pessoa
     Task<int> GetIdByDocumentAsync(string document);
+
+    // Busca os dados paginados
+    Task<PagedBaseResponse<Person>> GetPagedAsync(PersonFilterDb request);
 }

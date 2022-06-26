@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApi_ManProg.Domain.Entities;
+using WebApi_ManProg.Domain.FiltersDb;
 using WebApi_ManProg.Domain.Repositories;
 using WebApi_ManProg.Infra.Data.DataContext;
 
@@ -46,5 +47,17 @@ public class PersonRepository : IPersonRepository
     public async Task<int> GetIdByDocumentAsync(string document)
     {
         return (await _dbContext.People.FirstOrDefaultAsync(x => x.Document == document))?.Id ?? 0;
+    }
+
+    public async Task<PagedBaseResponse<Person>> GetPagedAsync(PersonFilterDb request)
+    {
+        var people = _dbContext.People.AsQueryable();
+
+        // Busca se foi passado um filtro 
+        if (!string.IsNullOrEmpty(request.Name))
+            people = people.Where(x => x.Name.Contains(request.Name)); // "Contais" similar a SELECT com LIKE
+
+        return await PagedBaseResponseHelper
+            .GetResponseAsync<PagedBaseResponse<Person>, Person>(people, request);
     }
 }
