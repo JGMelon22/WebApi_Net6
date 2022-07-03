@@ -13,14 +13,16 @@ public class PurchaseService : IPurchaseService
     private readonly IPersonRepository _personRepository;
     private readonly IProductRepository _productRepository;
     private readonly IPurchaseRepository _purchaseRepository;
+    private readonly IUnityOfWork _unityOfWork;
 
     public PurchaseService(IProductRepository productRepository, IPersonRepository personRepository,
-        IPurchaseRepository purchaseRepository, IMapper mapper)
+        IPurchaseRepository purchaseRepository, IMapper mapper, IUnityOfWork unityOfWork)
     {
         _productRepository = productRepository;
         _personRepository = personRepository;
         _purchaseRepository = purchaseRepository;
         _mapper = mapper;
+        _unityOfWork = unityOfWork;
     }
 
     public async Task<ResultService<PurchaseDTO>> CreateAsync(PurchaseDTO purchaseDto)
@@ -33,16 +35,37 @@ public class PurchaseService : IPurchaseService
         if (!validate.IsValid)
             return ResultService.RequestError<PurchaseDTO>("Erros ocorreram ao validar.", validate);
 
-        // Busca pelo produto e pela pessoa
-        var productId = await _productRepository.GetIdByCodErpAsync(purchaseDto.CodErp);
-        var personId = await _personRepository.GetIdByDocumentAsync(purchaseDto.Document);
-        var purchase = new Purchase(productId, personId);
+        try
+        {
+            // Abre a transaction
+            await _unityOfWork.BeginTransaction();
 
-        // Cria os dados
-        var data = await _purchaseRepository.CreateAsync(purchase);
-        purchaseDto.Id = data.Id;
+            // Busca pelo produto e pela pessoa
+            var productId = await _productRepository.GetIdByCodErpAsync(purchaseDto.CodErp);
 
-        return ResultService.Ok(purchaseDto);
+            if (productId == 0) // Produto não existe, cadastrar um novo
+            {
+                var product =
+                    new Product(purchaseDto.ProductName, purchaseDto.CodErp,
+                        purchaseDto.Price ?? 0); // Se o valor vier vazio, mete um zero
+                await _productRepository.CreateAsync(product);
+                productId = product.Id;
+            }
+
+            var personId = await _personRepository.GetIdByDocumentAsync(purchaseDto.Document);
+            var purchase = new Purchase(productId, personId);
+
+            // Cria os dados
+            var data = await _purchaseRepository.CreateAsync(purchase);
+            purchaseDto.Id = data.Id;
+            await _unityOfWork.Commit();
+            return ResultService.Ok(purchaseDto);
+        }
+        catch (Exception ex)
+        {
+            await _unityOfWork.Rollback();
+            return ResultService.Fail<PurchaseDTO>(ex.Message);
+        }
     }
 
     public async Task<ResultService<PurchaseDetailDTO>> GetByIdAsync(int id)
@@ -51,7 +74,7 @@ public class PurchaseService : IPurchaseService
 
         // Procura se o Id existe na base
         if (purchase == null)
-            return ResultService.Fail<PurchaseDetailDTO>("Compra não localizada na bvase de dados!");
+            return ResultService.Fail<PurchaseDetailDTO>("Compra não localizada na base de dados!");
 
         return ResultService.Ok(_mapper.Map<PurchaseDetailDTO>(purchase));
     }
