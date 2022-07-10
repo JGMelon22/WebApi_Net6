@@ -3,11 +3,9 @@ Uma WebAPI mais desacoplada com o foco em treinar um código mais flexível e ex
 _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnmUBDPnkKgV-75vQ)
 
 # Ferramentas utilizadas
-- Dbeaver e Azure DataStudio (para modelagem do banco de dados);
-- Rider;
-- Docker (para utilizar o SQL Server 2019);
+- .NET 6;
 - SQL Server 2019;
-- Postman e Swagger para testar os métodos CRUD.
+- Swagger.
 
 # Pacotes NuGet usados
 - Microsoft.EntityFrameworkCore (6.0.6);
