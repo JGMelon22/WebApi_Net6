@@ -1,92 +1,36 @@
--- Cria o banco de dados
+-- Cria o banco
 CREATE DATABASE DOTNET6_API;
 
--- Muda para a base recem criada
-USE DOTNET6_API;
+-- Cria as tabelas
+CREATE TABLE DOTNET6_API;.dbo.Pessoa (
+	IdPessoa INT IDENTITY(1,1) NOT NULL,
+	Nome NVARCHAR(100) NOT NULL,
+	Documento NVARCHAR(20) NOT NULL,
+	Celular VARCHAR(20) NOT NULL,
+	CONSTRAINT PK_IdPessoa PRIMARY KEY (IdPessoa)
+);
 
--- Criação das tabelas e colunas
-BEGIN TRANSACTION
-CREATE TABLE [Pessoa]
-(
-    [IdPessoa] [INT] IDENTITY(1, 1),
-    [Nome] [NVARCHAR](100) NOT NULL,
-    [Documento] [NVARCHAR](20) NOT NULL,
-    [Celular] [VARCHAR](20) NOT NULL
-)
-	GO
+CREATE TABLE Produto (
+	IdProduto INT IDENTITY(1,1) NOT NULL,
+	Nome nVARCHAR(100)  NOT NULL,
+	CodigoErp VARCHAR(10)  NOT NULL,
+	Preco DECIMAL(10,2) NOT NULL,
+	CONSTRAINT PK_IdProduto PRIMARY KEY (IdProduto)
+);
 
-ALTER TABLE [Pessoa]
-		ADD CONSTRAINT [PK_IdPessoa]
-			PRIMARY KEY ([IdPessoa])
-	GO
-ROLLBACK -- COMMIT
+CREATE TABLE Usuario (
+	IdUsuario INT IDENTITY(1,1) NOT NULL,
+	Email VARCHAR(50)  NOT NULL,
+	Senha VARCHAR(100)  NULL
+);
 
-BEGIN TRANSACTION
-CREATE TABLE [Produto]
-(
-    [IdProduto] [INT] IDENTITY(1, 1),
-    [Nome] [NVARCHAR](100) NOT NULL,
-    [CodigoErp] [VARCHAR](10) NOT NULL,
-    [Preco] [DECIMAL](10,2) NOT NULL
-)
-	GO
+CREATE TABLE Compra (
+	IdCompra INT IDENTITY(1,1) NOT NULL,
+	IdProduto INT NOT NULL,
+	IdPessoa INT NOT NULL,
+	DataCompra DATE NOT NULL,
+	CONSTRAINT PK_IdCompra PRIMARY KEY (IdCompra),
+	CONSTRAINT FK_IdPessoa FOREIGN KEY (IdPessoa) REFERENCES Pessoa(IdPessoa),
+	CONSTRAINT FK_IdProduto FOREIGN KEY (IdProduto) REFERENCES Produto(IdProduto)
+);
 
-ALTER TABLE [Produto]
-		ADD CONSTRAINT [PK_IdProduto]
-			PRIMARY KEY ([IdProduto])
-	GO
-ROLLBACK -- COMMIT
-
-BEGIN TRANSACTION
-CREATE TABLE [Compra]
-(
-    [IdCompra] [INT] IDENTITY(1, 1),
-    [IdProduto] [INT] NOT NULL,
-    [IdPessoa] [INT] NOT NULL,
-    [DataCompra] [DATE] NOT NULL,
-
-)
-	GO
-
-ALTER TABLE [Compra]
-		ADD CONSTRAINT [PK_IdCompra]
-			PRIMARY KEY ([IdCompra])
-	GO
-
-ALTER TABLE [Compra]
-		ADD CONSTRAINT [FK_IdProduto]
-			FOREIGN KEY ([IdProduto])
-            REFERENCES [Produto](IdProduto)
-	GO
-
-ALTER TABLE [Compra]
-		ADD CONSTRAINT [FK_IdPessoa]
-			FOREIGN KEY ([IdPessoa])
-            REFERENCES [Pessoa](IdPessoa)
-	GO
-ROLLBACK -- COMMIT
-
--- Cria a trigger para resetar o contador do identity
-CREATE Trigger [dbo].[ResetarContadorPessoa]
-ON [dbo].[Pessoa]
-INSTEAD OF DELETE
-AS 
-BEGIN
-	DBCC CHECKIDENT ('[Pessoa]', RESEED, 0);
-END
-
-CREATE Trigger [dbo].[ResetarContadorProduto]
-ON [dbo].[Produto]
-INSTEAD OF DELETE
-AS 
-BEGIN
-	DBCC CHECKIDENT ('[Produto]', RESEED, 0);
-END
-
-CREATE Trigger [dbo].[ResetarContadorCompra]
-ON [dbo].[Compra]
-INSTEAD OF DELETE
-AS 
-BEGIN
-	DBCC CHECKIDENT ('[Compra]', RESEED, 0);
-END
