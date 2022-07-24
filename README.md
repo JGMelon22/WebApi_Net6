@@ -8,9 +8,9 @@ _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnm
 - Swagger.
 
 # Pacotes NuGet usados
-- Microsoft.EntityFrameworkCore (6.0.6);
-- Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.6);
-- Microsoft.EntityFrameworkCore.SqlServer (6.0.6);
+- Microsoft.EntityFrameworkCore (6.0.67;
+- Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.7);
+- Microsoft.EntityFrameworkCore.SqlServer (6.0.7);
 - Swashbuckle.AspNetCore (6.3.1);
 - FluentValidation (11.1.0);
 - AutoMapper (11.0.1);
