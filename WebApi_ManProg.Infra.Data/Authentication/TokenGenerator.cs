@@ -1,21 +1,20 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.DataProtection;
 using Microsoft.IdentityModel.Tokens;
 using WebApi_ManProg.Domain.Authentication;
 using WebApi_ManProg.Domain.Entities;
 
-namespace WebApi_ManProg.Infra.Data.DataContext;
+namespace WebApi_ManProg.Infra.Data.Authentication;
 
 public class TokenGenerator : ITokenGenerator
 {
     public dynamic Generator(User user) // Claim necessário para gerar um token válido para o usuário
     {
-        var claims = new List<Claim>()
+        var claims = new List<Claim>
         {
-            new Claim("Email", user.Email),
-            new Claim("Id", user.Id.ToString()) // O Id na model "User" é um inteiro, por isso a conversão explícita
+            new("Email", user.Email),
+            new("Id", user.Id.ToString()) // O Id na model "User" é um inteiro, por isso a conversão explícita
         };
 
         // Tempo válido para o token gerado e nossa chave 

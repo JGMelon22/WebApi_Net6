@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(authOptions =>
 {
     // Chama a autenticação em si
     options.RequireHttpsMetadata = false;
-    options.TokenValidationParameters = new TokenValidationParameters()
+    options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
         ValidateLifetime = true,
