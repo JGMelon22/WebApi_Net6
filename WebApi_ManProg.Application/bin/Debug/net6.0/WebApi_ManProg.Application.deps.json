@@ -9,7 +9,7 @@
       "WebApi_ManProg.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "11.1.0",
+          "FluentValidation": "11.1.1",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.7",
@@ -31,11 +31,11 @@
           }
         }
       },
-      "FluentValidation/11.1.0": {
+      "FluentValidation/11.1.1": {
         "runtime": {
           "lib/net6.0/FluentValidation.dll": {
             "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.1.0.0"
+            "fileVersion": "11.1.1.0"
           }
         }
       },
@@ -2267,7 +2267,7 @@
       "WebApi_ManProg.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "11.1.0",
+          "FluentValidation": "11.1.1",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.7",
@@ -2292,12 +2292,12 @@
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
     },
-    "FluentValidation/11.1.0": {
+    "FluentValidation/11.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ld7w+2jOmnhQqFkngEGuEWTRa5j6u4Xzli7jKxRtbA5PtuHHcpin01qxvxYL0LomeJuzRMGAOURu2rKONdjKQA==",
-      "path": "fluentvalidation/11.1.0",
-      "hashPath": "fluentvalidation.11.1.0.nupkg.sha512"
+      "sha512": "sha512-0rviOsKbNzoQUQsagwt1WVVYKSDfaZboKIvdfL4T8xSsX2ZUzJ5sIm1pdV2uLpZysgdpBsOAAnGMabewTMQhzg==",
+      "path": "fluentvalidation/11.1.1",
+      "hashPath": "fluentvalidation.11.1.1.nupkg.sha512"
     },
     "Humanizer.Core/2.2.0": {
       "type": "package",

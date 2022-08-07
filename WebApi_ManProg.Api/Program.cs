@@ -2,6 +2,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using WebApi_ManProg.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,8 +11,42 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddEndpointsApiExplorer(); // Incrementando o SWAGGER  
+builder.Services.AddSwaggerGen(x =>
+{
+    x.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Api .NET 6",
+        Version = "v1",
+        Description = "Desenvolvendo uma Web API com .NET 6"
+    });
+
+    x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = @"Autenticação em JWT. \r\n\r\n
+                            Ex: Bearer {token}",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Scheme = "Bearer"
+    });
+    x.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+});
 
 // 
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -20,8 +55,6 @@ builder.Services.AddMvc().AddJsonOptions(options => // Remove os retornos nulos 
 {
     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 });
-
-var app = builder.Build();
 
 // Serviço da autenticação
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Net6DecoupledAPI"));
@@ -44,6 +77,8 @@ builder.Services.AddAuthentication(authOptions =>
         ValidateIssuer = false
     };
 });
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

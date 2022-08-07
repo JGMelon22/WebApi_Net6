@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi_ManProg.Application.DTOs;
 using WebApi_ManProg.Application.Services.Interfaces;
@@ -5,6 +6,7 @@ using WebApi_ManProg.Domain.FiltersDb;
 
 namespace WebApi_ManProg.Api.Controllers;
 
+[Authorize] // Só vai rodar se estiver autenticado
 [Route("api/[controller]")]
 [ApiController]
 public class PersonController : ControllerBase

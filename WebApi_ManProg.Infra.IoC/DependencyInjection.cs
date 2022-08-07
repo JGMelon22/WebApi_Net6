@@ -4,7 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using WebApi_ManProg.Application.Mapping;
 using WebApi_ManProg.Application.Services;
 using WebApi_ManProg.Application.Services.Interfaces;
+using WebApi_ManProg.Domain.Authentication;
 using WebApi_ManProg.Domain.Repositories;
+using WebApi_ManProg.Infra.Data.Authentication;
 using WebApi_ManProg.Infra.Data.DataContext;
 using WebApi_ManProg.Infra.Data.Repositories;
 
@@ -24,6 +26,8 @@ public static class DependencyInjection
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IPurchaseRepository, PurchaseRepository>();
         services.AddScoped<IUnityOfWork, UnityOfWork>();
+        services.AddScoped<ITokenGenerator, TokenGenerator>();
+        services.AddScoped<IUserRepository, UserRepository>();
         return services;
     }
 
@@ -34,7 +38,7 @@ public static class DependencyInjection
         services.AddScoped<IPersonService, PersonService>();
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<IPurchaseService, PurchaseService>();
-
+        services.AddScoped<IUserService, UserService>();
         return services;
     }
 }

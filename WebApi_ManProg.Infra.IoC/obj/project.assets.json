@@ -27,7 +27,7 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "FluentValidation/11.1.0": {
+      "FluentValidation/11.1.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/FluentValidation.dll": {}
@@ -3165,7 +3165,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "11.1.0",
+          "FluentValidation": "11.1.1",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.7",
@@ -3184,7 +3184,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "11.1.0",
+          "FluentValidation": "11.1.1",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.7",
@@ -3202,7 +3202,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "FluentValidation": "11.1.0",
+          "FluentValidation": "11.1.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.7",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
@@ -3249,16 +3249,16 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "FluentValidation/11.1.0": {
-      "sha512": "Ld7w+2jOmnhQqFkngEGuEWTRa5j6u4Xzli7jKxRtbA5PtuHHcpin01qxvxYL0LomeJuzRMGAOURu2rKONdjKQA==",
+    "FluentValidation/11.1.1": {
+      "sha512": "0rviOsKbNzoQUQsagwt1WVVYKSDfaZboKIvdfL4T8xSsX2ZUzJ5sIm1pdV2uLpZysgdpBsOAAnGMabewTMQhzg==",
       "type": "package",
-      "path": "fluentvalidation/11.1.0",
+      "path": "fluentvalidation/11.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.11.1.0.nupkg.sha512",
+        "fluentvalidation.11.1.1.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net5.0/FluentValidation.dll",
         "lib/net5.0/FluentValidation.xml",
@@ -9991,7 +9991,7 @@
     "net6.0": [
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "FluentValidation >= 11.1.0",
+      "FluentValidation >= 11.1.1",
       "Microsoft.EntityFrameworkCore >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.7",
@@ -10002,19 +10002,19 @@
     ]
   },
   "packageFolders": {
-    "/home/joogabriel/.nuget/packages/": {}
+    "/home/joaog/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
+      "projectUniqueName": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
       "projectName": "WebApi_ManProg.Infra.IoC",
-      "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
-      "packagesPath": "/home/joogabriel/.nuget/packages/",
-      "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/obj/",
+      "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
+      "packagesPath": "/home/joaog/.nuget/packages/",
+      "outputPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joogabriel/.nuget/NuGet/NuGet.Config"
+        "/home/joaog/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10026,14 +10026,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
-              "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj"
+            "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
+              "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj"
             },
-            "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
-              "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+            "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+              "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
             },
-            "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
-              "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj"
+            "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
+              "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj"
             }
           }
         }
@@ -10058,7 +10058,7 @@
           },
           "FluentValidation": {
             "target": "Package",
-            "version": "[11.1.0, )"
+            "version": "[11.1.1, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -10092,7 +10092,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

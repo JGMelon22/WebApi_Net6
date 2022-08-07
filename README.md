@@ -14,6 +14,6 @@ _Hats off to_ [Manual do Programador](https://www.youtube.com/channel/UC04YVnhnm
 - Microsoft.AspNetCore.Authentication.JwtBearer (6.0.7);
 - System.IdentityModel.Tokens.Jwt (6.22.0);
 - Swashbuckle.AspNetCore (6.4.0);
-- FluentValidation (11.1.0);
+- FluentValidation (11.1.1);
 - AutoMapper (11.0.1);
 - AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0).

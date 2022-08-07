@@ -21,7 +21,7 @@ public static class PagedBaseResponseHelper
     {
         var response = new TResponse();
         var count = await query.CountAsync(); // Total de linhas / quantidade de páginas informadas
-        response.TotalPages = (int) Math.Abs((double) count / request.PageSize);
+        response.TotalPages = (int)Math.Abs((double)count / request.PageSize);
         response.TotalRegisters = count; // Retorna o total da página
 
         // Validando

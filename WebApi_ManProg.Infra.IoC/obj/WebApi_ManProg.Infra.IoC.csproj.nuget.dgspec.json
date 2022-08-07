@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj": {}
+    "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj": {}
   },
   "projects": {
-    "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
+    "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
         "projectName": "WebApi_ManProg.Application",
-        "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
-        "packagesPath": "/home/joogabriel/.nuget/packages/",
-        "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/obj/",
+        "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joogabriel/.nuget/NuGet/NuGet.Config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
-                "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+              "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+                "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
               }
             }
           }
@@ -48,7 +48,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -82,21 +82,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+    "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
         "projectName": "WebApi_ManProg.Domain",
-        "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
-        "packagesPath": "/home/joogabriel/.nuget/packages/",
-        "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/obj/",
+        "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joogabriel/.nuget/NuGet/NuGet.Config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -126,7 +126,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -160,21 +160,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
+    "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
         "projectName": "WebApi_ManProg.Infra.Data",
-        "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
-        "packagesPath": "/home/joogabriel/.nuget/packages/",
-        "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/obj/",
+        "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joogabriel/.nuget/NuGet/NuGet.Config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -186,8 +186,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
-                "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+              "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+                "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
               }
             }
           }
@@ -208,7 +208,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -246,21 +246,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj": {
+    "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
         "projectName": "WebApi_ManProg.Infra.IoC",
-        "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
-        "packagesPath": "/home/joogabriel/.nuget/packages/",
-        "outputPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.IoC/obj/",
+        "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/WebApi_ManProg.Infra.IoC.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.IoC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joogabriel/.nuget/NuGet/NuGet.Config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -272,14 +272,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
-                "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj"
+              "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj": {
+                "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Application/WebApi_ManProg.Application.csproj"
               },
-              "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
-                "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
+              "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj": {
+                "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Domain/WebApi_ManProg.Domain.csproj"
               },
-              "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
-                "projectPath": "/home/joogabriel/Documents/CodeRelated/Codes/CSharp/WebApi_ManProg/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj"
+              "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj": {
+                "projectPath": "/home/joaog/Documents/Codes/CSharp/WebApi_Net6/WebApi_ManProg.Infra.Data/WebApi_ManProg.Infra.Data.csproj"
               }
             }
           }
@@ -304,7 +304,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -338,7 +338,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
