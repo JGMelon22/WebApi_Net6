@@ -48,19 +48,19 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.1, )"
+              "version": "[11.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -73,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -126,19 +127,19 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.1.1, )"
+              "version": "[11.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -151,7 +152,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -160,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
